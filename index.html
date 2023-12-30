@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch with Laps</title>
+</head>
+<body>
+    <div id="output">00.000</div>
+
+    <button id="startBtn" onclick="startStopwatch()">시작</button>
+    <button id="lapBtn" style="display: none;" onclick="recordLap()">랩 기록</button>
+    <button id="stopBtn" style="display: none;" onclick="togglePause()">일시정지</button>
+    <button id="resetBtn" style="display: none;" onclick="resetStopwatch()">초기화</button>
+
+    <div id="lapOutput"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
